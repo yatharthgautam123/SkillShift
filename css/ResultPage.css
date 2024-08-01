@@ -1,0 +1,249 @@
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+header {
+    width: 100%;
+    height: 95px;
+    background: #223B96;
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+    box-sizing: border-box;
+    position: fixed; /* Fixes the navbar at the top */
+    top: 0; /* Positions it at the top */
+    left: 0; /* Ensures it spans from the left edge */
+    z-index: 1000; /* Makes sure it's above other content */
+    justify-content: space-between; /* Space between logo and nav */
+}
+  
+  header .logo h1 {
+    margin: 0;
+    color: white; /* Change logo text color to white */
+  }
+  
+  nav {
+    margin-left: auto; /* Pushes the nav to the right */
+  }
+  
+  nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+  }
+  
+  nav a:hover {
+    text-decoration: underline;
+  }
+
+/* Result Page Styles */
+.result-page {
+    margin-top: 500px;;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.result-section {
+    background: url('Rectangle121.png') no-repeat center center;
+    background-size: cover;
+    padding: 60px 20px;
+    border-radius: 10px;
+    color: white;
+    text-align: center;
+    position: relative;
+}
+
+.result-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(63, 62, 62, 0.5);
+    border-radius: 10px;
+}
+
+.result-section * {
+    position: relative;
+    z-index: 1;
+}
+
+.result-section h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+    color: white;
+}
+
+.result-section p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+    color: white;
+}
+
+.skills-analysis .skill {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.skills-analysis .skill .skill-name {
+    flex: 1;
+    text-align: left;
+    color: white;
+}
+
+.skills-analysis .skill .progress-bar {
+    flex: 2;
+    background-color: #fff;
+    border-radius: 5px;
+    overflow: hidden;
+    height: 20px;
+    margin: 0 10px;
+    position: relative;
+}
+
+.skills-analysis .skill .progress-bar span {
+    display: block;
+    height: 100%;
+    background-color: #2d3e8b;
+    position: absolute;
+}
+
+.skills-analysis .skill .percentage {
+    flex: 0.5;
+    text-align: right;
+    color: white;
+}
+
+.result-section .details-link {
+    display: block;
+    text-align: right;
+    color: white;
+    text-decoration: none;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+/* Job Profile Section Styles */
+.job-profile-section {
+    margin: 40px 0;
+    text-align: center;
+}
+
+.job-profile-section h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #2d3e8b;
+}
+
+.job-profile-section .job-profiles {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.job-profile-section .job-profile {
+    text-align: center;
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    background-color: #fff;
+    color: #2d3e8b;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.job-profile-section .job-profile h3 {
+    font-size: 1em;
+    margin-bottom: 5px;
+}
+
+.job-profile-section .job-profile p {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+/* Action Section Styles */
+.action-section {
+    text-align: center;
+    padding: 40px 20px;
+    background: url('/Users/cheshtabiala/Desktop/Rectangle 121.png') no-repeat center center;
+    background-size: cover;
+    position: relative;
+    color: white;
+}
+
+.action-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 0;
+}
+
+.action-section * {
+    position: relative;
+    z-index: 1;
+}
+
+.action-section h2 {
+    font-size: 1.8em;
+    margin-bottom: 20px;
+}
+
+.action-section .actions {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.action-section .action-button {
+    padding: 15px 30px;
+    background-color: #2d3e8b;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    font-weight: bold;
+}
+
+/* Footer Styles */
+.footer {
+    padding: 40px 20px;
+    text-align: center;
+    color: white;
+}
+
+.btn{
+    text-align: center;
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    background-color: #fff;
+    color: #2d3e8b;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
